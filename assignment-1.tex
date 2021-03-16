@@ -1,3 +1,4 @@
+
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 
 \usepackage{setspace}
@@ -139,31 +140,33 @@ and latex-tikz codes from
 \begin{lstlisting}
 https://github.com/rajasekhar156/AI1103/edit/main/assignment-1.tex\\ \\ \\
 \end{lstlisting}
-
 QUESTION:\\
 A manufacturer has three machine operators A, B and C. The first operator A produces 1$\%$ defective items, where as the other two operators B and C produce 5$\%$ and 7$\%$ defective items respectively. A is on the job
 for 50$\%$ of the time, B is on the job for 30$\%$ of the time and C is on the job for 20$\%$ of the time. A defective item is produced, what
 is the probability that it was produced by A$?$
 \\ \\
 ANSWER:\\
-Let X $\in\{0,1,2\}$ be the random variable denoting that item was produced by operator A when X$=$0, and random variable Y $\in\{0,1\}$ be the random variable deoting that item produced was  defective when Y$=$1.\\ \\
+Let X $\in\{0,1,2\}$ be the random variable denoting that item was produced by operator A when X$=$0, X$=$1 denoting that item was produced by operator B ,X$=$2 denoting that item was produced by operator C, and random variable Y $\in\{0,1\}$ be the random variable deoting that item produced was  defective when Y$=$1.\\ \\
 \begin{align}
-	P(X=0) &= 0.5 \\ 
-    P(X=1) &= 0.3 \\ 
-    P(X=2) &= 0.2 \\ 
-	P(Y=1/X=0) &= 0.01\\
-	P(Y=1/X=1) &= 0.05\\ 
-	P(Y=1/X=2) &= 0.07
+	\pr{X=0} &= 0.5 \\ 
+    \pr{X=1} &= 0.3 \\ 
+    \pr{X=2} &= 0.2 \\ 
+	\pr{Y=1/X=0} &= 0.01\\
+	\pr{Y=1/X=1} &= 0.05\\ 
+	\pr{Y=1/X=2} &= 0.07
 	\end{align}
-	\\ \\ \\ \\ \\ \\ \\ \\ 
-	From conditional probability we say that \\ \\
-	P(X$=$0/Y$=$1) $=$ $\frac{P(Y=1/X=0)P(X=0)}{\sum_{i=0}^{i=2}P(Y=1/X=i)P(X=i)}$\\ \\
-	P(X$=$0/Y$=$1) $=$ $\frac{(0.01)(0.5)}{(0.01)(0.5)+(0.05)(0.3)+(0.07)(0.2)}$ \\ \\
-	P(X$=$0/Y$=$1) $=$ $\frac{5}{34}$\\ \\
-	P(X$=$0/Y$=$1) $=$ 0.147058\\ \\
+	\\\\\\\\\\\\\\\
+	From conditional probability we say that \\
+	\begin{align*}
+	\pr{X=0/Y=1} &= \frac{\pr{Y=1/X=0}\pr{X=0}}{\sum_{i=0}^{i=2}\pr{Y=1/X=i}\pr{X=i}}\\
+	 &= \frac{(0.01)(0.5)}{(0.01)(0.5)+(0.05)(0.3)+(0.07)(0.2)}\\
+	&=\frac{5}{34}\\
+	& = 0.147058
+	\end{align*}
 	Probability that defective item is produced by operator A is 0.147058
 	
 \end{document}
+
 
 
 
