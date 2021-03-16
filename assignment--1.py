@@ -29,9 +29,9 @@ print("\n\n")
 
 trails=int(1e9)
 #caluclating the bernoulli disturbutions for 1000000000 trails 
-defect_A_distirbution = bernoulli.rvs(defpro_A, size=trials)
-defect_B_distirbution = bernoulli.rvs(defpro_B, size=trials)
-defect_C_distirbution = bernoulli.rvs(defpro_C, size=trials)
+defect_A_distirbution = bernoulli.rvs(defpro_A, size=trails)
+defect_B_distirbution = bernoulli.rvs(defpro_B, size=trails)
+defect_C_distirbution = bernoulli.rvs(defpro_C, size=trails)
 #experimentally caluclated values 
 exp_defpro_A = np.mean(defect_A_distirbution)
 exp_defpro_B = np.mean(defect_B_distirbution)
