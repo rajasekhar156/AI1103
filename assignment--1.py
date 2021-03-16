@@ -27,8 +27,8 @@ print("probability of item produced by C is defective is ", defpro_C)
 print("probability of item produced by either A orB orC is defective is", defpro)
 print("\n\n")
 
-trails=int(1e9)
-#caluclating the bernoulli disturbutions for 1000000000 trails 
+trails=int(1e7)
+#caluclating the bernoulli disturbutions for 10000000 trails 
 defect_A_distirbution = bernoulli.rvs(defpro_A, size=trails)
 defect_B_distirbution = bernoulli.rvs(defpro_B, size=trails)
 defect_C_distirbution = bernoulli.rvs(defpro_C, size=trails)
